@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lygda Pharmacy Blog`,
     description: `Lygda Pharmacy Blog`,
+    siteUrl: '',
     author: `@kpanosgr`,
   },
   plugins: [
