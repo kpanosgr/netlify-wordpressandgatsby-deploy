@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -34,9 +34,9 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer style={{ textAlign: "center",}}>
+          <footer style={{ textAlign: "center", marginTop: "1.45rem" }}>
           <p>
-            © {new Date().getFullYear()} <a href="#">NIKOS PAPADOPOULOS</a> | All rights reserved
+            © {new Date().getFullYear()} <Link to='#'>Lygda Pharmacy Blog</Link> | All rights reserved
           </p>        
           </footer>
         </div>

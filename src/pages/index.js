@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,11 +14,14 @@ const IndexPage = ({ data }) => (
             to={`/post/${post.node.slug}`}
             style={{ display: "flex", color:"#000", textDecoration:"none" }}
           >
-            <div style={{ width: "75%" }}>
+            <div style={{ width: "100%" }}>
               <h3
                 dangerouslySetInnerHTML={{ __html: post.node.title }}
                 style={{ marginBottom: "0" }}
               />
+              <p style= {{margin:0, color: "gray" }}>
+                {post.node.date}
+              </p>
               <div dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
             </div>            
           </Link>

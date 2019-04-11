@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `nikospapadopoulos photography`,
-    description: `this is a first description`,
+    title: `Lygda Pharmacy Blog`,
+    description: `Lygda Pharmacy Blog`,
     author: `@kpanosgr`,
   },
   plugins: [
@@ -30,8 +30,8 @@ module.exports = {
 	{
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: "www.nikospapadopoulos.com",
-        protocol: "http",
+        baseUrl: "blog.lygdapharmacy.gr",
+        protocol: "https",
         hostingWPCOM: false,
         useACF: false,
         verboseOutput: false,
